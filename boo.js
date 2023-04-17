@@ -1,9 +1,6 @@
-let a = prompt("entrez un entier")
-
-if (a%2 == 0){
-    document.write("<h1> pair</h1>");
-}
-else {
-    alert("impair")
+function stocker(){
+    localStorage.setItem("prenom",document.getElementById("prenom").value);
+    localStorage.setItem("nom",document.getElementById("nom").value);
+    window.location= "deux.html";
 }
 

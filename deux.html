@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="charger()">
+
+    <h1> bonjour</h1>
+    <div id="essai"></div>    
+    <form class="table" method="post" action="boo.html">
+
+
+        <div class="ms-3 rounded"> <p class="text-break">
+            </p>
+            <label for="Nom">pseudo : </label>
+
+            <input class="shadow bg-body-tertiary rounded" pattern="[A-Za-z]*" type="text"
+                 id="nom">
+        </div>
+
+
+        <div class="ms-3 rounded"> <p class="text-break">
+            </p>
+            <label for="Prenom">mot de passe :</label>
+            <input class="shadow bg-body-tertiary rounded" pattern="[A-Za-z]*" type="text"
+            id="prenom">
+        </div>
+
+        <div class="mx-auto p-1" style="width: 100px;" ><p class="text-break">
+        </p>
+        <label for="envoyer"></label>
+        <input value="Connexion" onclick="stocker()" class="rounded" type="submit" name="envoyer" min="0" max="10">
+    </div>
+    
+        <div class="mx-auto p-1" style="width: 100px;" >
+
+        <label for="envoyer"></label>
+        <input value="Annuler" onclick="stocker()" class="rounded" type="submit" name="envoyer" min="0" max="10">
+    </div>
+
+    <script>
+    function charger(){
+        document.getElementById("essai").innerHTML = localStorage.getItem("prenom") + " " + localStorage.getItem("nom");
+    }
+    </script>
+</body>
+</html>
