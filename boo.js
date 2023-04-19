@@ -1,4 +1,6 @@
 // ===========================================================================Method post boo
+// setItem pour stocker le contenu d'un id
+
 function stocker(){
     localStorage.setItem("mdp",document.getElementById("mdp").value);
     localStorage.setItem("nom",document.getElementById("nom").value);
